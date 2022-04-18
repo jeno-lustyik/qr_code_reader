@@ -12,7 +12,7 @@ img = st.file_uploader('Upload your QR image here')
 
 if img is not None:
     img = Image.open(img)
-    img = img.save('img.jpg')
+    img.save('img.jpg')
     img = cv.imread('img.jpg')
     qr = cv.QRCodeDetector()
     x, y, string = qr.detectAndDecode(img)
