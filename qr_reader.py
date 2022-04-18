@@ -17,6 +17,6 @@ if img is not None:
     qr = cv.QRCodeDetector()
     x, y, string = qr.detectAndDecode(img)
 
-    st.text(f'Your QR code contains the following:\n{x}')
+    st.text(f'Your QR code contains the following:\n\n{x}')
 
 
